@@ -14,8 +14,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <jedis.version>3.0.0</jedis.version>
-        <github.global.server>github</github.global.server>
         <repository.directory>/Users/changbohuang/GitProject/168-platform/mvn-repo</repository.directory>
     </properties>
     <packaging>jar</packaging>
@@ -182,85 +180,7 @@
                     <altDeploymentRepository>internal.repo::default::file://${repository.directory}</altDeploymentRepository>
                 </configuration>
             </plugin>
-            <!-- <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>0.12</version>
-                <configuration>
-                    <message>Maven artifacts for ${project.artifactId}-${project.version}</message>
-                    <noJekyll>true</noJekyll>
-                    <outputDirectory>${repository.directory}/ms-common</outputDirectory>
-                    <branch>refs/heads/main</branch>
-                    <merge>true</merge>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                    <repositoryName>mvn-repo</repositoryName>
-                    <repositoryOwner>168-platform</repositoryOwner>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>site</goal>
-                        </goals>
-                        <phase>deploy</phase>
-                    </execution>
-                </executions>
-            </plugin> -->
-            <!-- <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-install-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>install-jar</id>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>install-file</goal>
-                        </goals>
-                        <configuration>
-                            <file>${project.build.directory}/${project.build.finalName}.jar</file>
-                            <groupId>com.example</groupId> 
-                            <artifactId>your-artifact-id</artifactId> 
-                            <version>${project.version}</version>
-                            <packaging>jar</packaging>
-                            
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin> -->
-			<!-- <plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<executions>
-					<execution>
-						<goals>
-							<goal>repackage</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<includes>
-						<include>
-							<groupId>nothing</groupId>
-							<artifactId>nothing</artifactId>
-						</include>
-					</includes>
-				</configuration>
-			</plugin> -->
 		</plugins>
 	</build>
-     <!--配置项目生成的构件部署到Nexus私服上 -->
-    <!-- <distributionManagement>
-        <repository>
-            <id>nexus-releases</id>
-            <name>Nexus ReleaseRepository</name>    
-            <url>http://54.92.87.233:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <name>Nexus SnapshotsRepository</name>      
-            <url>http://54.92.87.233:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement> -->
 
 </project>
