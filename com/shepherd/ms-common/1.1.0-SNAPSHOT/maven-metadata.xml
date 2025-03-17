@@ -3,21 +3,21 @@
   <groupId>com.shepherd</groupId>
   <artifactId>ms-common</artifactId>
   <versioning>
-    <lastUpdated>20250314131809</lastUpdated>
+    <lastUpdated>20250317155513</lastUpdated>
     <snapshot>
-      <timestamp>20250314.131809</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20250317.155513</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.1.0-20250314.131809-1</value>
-        <updated>20250314131809</updated>
+        <value>1.1.0-20250317.155513-2</value>
+        <updated>20250317155513</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.1.0-20250314.131809-1</value>
-        <updated>20250314131809</updated>
+        <value>1.1.0-20250317.155513-2</value>
+        <updated>20250317155513</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
